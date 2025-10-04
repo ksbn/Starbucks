@@ -1,0 +1,424 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f5;
+  color: #1c1c1c;
+}
+
+/* Header Styles */
+.header {
+  width: 100%;
+  background-color: white;
+  border-bottom: 3px solid #c0432d;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+.logo img {
+  height: 50px;
+}
+
+/* Navigation Links */
+.nav-links a {
+  margin: 0 1.5em;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  border-bottom: 2px solid #00754a;
+}
+
+/* Right-side Buttons */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.store-locator {
+  margin-right: 1.5em;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.store-locator i {
+  margin-right: 0.5em;
+}
+
+/* Sign-in and Join Buttons */
+.sign-in-btn,
+.join-now-btn {
+  padding: 0.5em 1.5em;
+  border-radius: 25px;
+  font-size: 16px;
+  text-decoration: none;
+  margin-left: 1em;
+}
+
+.sign-in-btn {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+
+.sign-in-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.join-now-btn {
+  background-color: black;
+  color: #eaf5f1;
+  border: none;
+}
+
+.join-now-btn:hover {
+  background-color: #333;
+}
+
+/* Bottom Bar */
+.bottom-bar {
+  background-color: #1e3932;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+.bottom-bar p {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("xl-hero-desktop_2021.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  height: 400px;
+  background-color: #d4e9e2;
+  padding: 40px 20px;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.join-btn {
+  background-color: #00754a;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.join-btn:hover {
+  background-color: #005a36;
+}
+
+.hero-footer {
+  font-size: 14px;
+}
+
+.hero-footer a {
+  color: #1c1c1c;
+  text-decoration: underline;
+}
+
+.hero-image {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.hero-image img.star {
+  width: 700px;
+  height: 400px;
+  max-width: none;
+  object-fit: cover;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+/* Getting Started Section */
+.getting-started {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+}
+
+.getting-started .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.getting-started h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #1e3932;
+}
+
+.getting-started .subtitle {
+  font-size: 16px;
+  color: #6c6c6c;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .steps {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.step {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.step-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00754a;
+  border: 2px solid #00754a;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step h3 {
+  font-size: 18px;
+  color: #1e3932;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.step a {
+  color: #00754a;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.step a:hover {
+  text-decoration: underline;
+}
+
+/* Rewards Section */
+.rewards {
+  background-color: #d4e9e2;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.rewards .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.rewards-title {
+  font-size: 28px;
+  color: #1e3932;
+  margin-bottom: 30px;
+}
+
+.stars-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tab {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  color: #1e3932;
+}
+
+.tab .tab-number {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1e3932;
+}
+
+.tab .star {
+  font-size: 10px;
+  color: #cba258;
+  /* golden colour of star */
+}
+
+.tab.active .tab-number {
+  font-weight: bold;
+  color: #00754a;
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #00754a;
+  border-radius: 2px;
+}
+
+/* Tabs with stars */
+.stars-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tab {
+  position: relative;
+  cursor: pointer;
+  color: #cba258;
+  /* Yellow colour of stars */
+}
+
+.tab.active {
+  font-weight: bold;
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #00754a;
+  border-radius: 2px;
+}
+
+
+.tab {
+  position: relative;
+  cursor: pointer;
+}
+
+.tab.active {
+  color: #00754a;
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #00754a;
+  border-radius: 2px;
+}
+
+.rewards-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.rewards-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.rewards-image img {
+  max-width: 250px;
+  height: auto;
+}
+
+.rewards-text h3 {
+  font-size: 20px;
+  color: #1e3932;
+  margin-bottom: 10px;
+}
+
+.rewards-text p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.rewards-image,
+.rewards-text {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+
+  .rewards-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
