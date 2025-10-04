@@ -106,18 +106,20 @@ body {
 .hero {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-image: url("xl-hero-desktop_2021.png");
+  align-items: center;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right center;
   height: 400px;
   background-color: #d4e9e2;
   padding: 40px 20px;
+  padding-right: 1px;
 }
 
+
 .hero-content {
-  max-width: 500px;
+  z-index: 2;
 }
 
 .hero h1 {
@@ -155,21 +157,19 @@ body {
   text-decoration: underline;
 }
 
-.hero-image {
-  position: relative;
-  flex-shrink: 0;
-}
-
 .hero-image img.star {
   width: 700px;
   height: 400px;
-  max-width: none;
   object-fit: cover;
   position: relative;
 }
 
-@media (max-width: 768px) {
+.hero-image {
+  position: relative;
+}
 
+
+@media (max-width: 768px) {
   .hero {
     flex-direction: column;
     text-align: center;
